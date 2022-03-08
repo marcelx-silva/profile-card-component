@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+    .attribution { 
+      font-size: 11px; text-align: center;
+     }
+    .attribution a { 
+      color: #fff;
+      text-decoration:underline;
+     }
+    
+     body{
+       font-size:18px;
+       font-family: 'Kumbh Sans', sans-serif;
+       background-color: hsl(185, 75%, 39%);
+       background-image:
+        url(./images/bg-pattern-top.svg),
+        url(./images/bg-pattern-bottom.svg);
+      background-repeat:  no-repeat;
+      background-position: -80% 110%, 160% -60% ;
+      
+     }
+    .card{
+      width: 350px;
+      height: 380px;
+      background-color: white;
+      margin: 5% auto;
+      border-radius: 15px;
+      
+    }
+    ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap:50px;
+      
+    }
+    .profile-picture{
+      z-index: 1;
+      position: relative;
+      margin-top: -50px;
+      display: block;
+      margin-left: 33.1%;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom:5%;
+    }
+
+    .back-cover-img{
+      border-radius: 15px 15px 0 0;
+    }
+    .header{
+      text-align: center;
+      margin-bottom:40px;
+    }
+    .country{
+      display: block;
+    }
+    .number-info{
+      padding-top: 6%;
+    }
+    .name,.number-info{
+      font-weight: 700;
+    }
+    .age, .country, .header-info{
+      font-weight: 400;
+      color:hsl(0, 0%, 59%);
+    }
+    .header-info{
+      font-size: 14px;
+      margin-left: -10px;
+      margin-top: 2%;
+    }
+    .info{
+      border-top:1px solid hsl(0, 0%, 59%);
+      
+    }
+    @media (max-width:375px){
+      .card{
+        height: 19em;
+        width: 300px;
+        margin: 25% auto;
+      }
+     .back-cover-img{
+       width: 300px;
+     }
+     .body{
+      background-position: 50% top;
+      background-position: 5px 20px , 0;
+      background-size: 100vw auto;
+     }
+     .header-info{
+      font-size: 0.6em;
+    }
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="back-cover">
+      <img src="images/bg-pattern-card.svg" alt="" class="back-cover-img">
+    </div>
+      <div class="header">
+        <img src="images/image-victor.jpg" alt="" class="profile-picture">
+        <span class="name">Victor Crest</span>
+        <span class="age">26</span>
+        <span class="country"> London</span>
+      </div>
+      <div class="info">
+          <ul class="number-info">
+            <li>80K</li>
+            <li>803K</li>
+            <li>1.4K</li>
+          </ul>
+          <ul class="header-info">
+            <li>Followers</li>
+            <li>Likes</li>
+            <li>Photos</li>
+          </ul>
+      </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/marcelx-silva">Thiago Marcelo</a>.
+  </div>
+</body>
+</html>
