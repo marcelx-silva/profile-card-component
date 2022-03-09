@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -13,10 +13,10 @@
   <style>
    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-    .attribution { 
+    footer { 
       font-size: 11px; text-align: center;
      }
-    .attribution a { 
+    footer a { 
       color: #fff;
       text-decoration:underline;
      }
@@ -37,7 +37,7 @@
       background-repeat:  no-repeat;
       background-position: -80% 110%, 160% -60% ;
      }
-    .card{
+    main{
       width: 350px;
       height: 380px;
       background-color: white;
@@ -91,7 +91,7 @@
       
     }
     @media (max-width:375px){
-      .card{
+      main{
         height: 19em;
         width: 300px;
         margin: 25% auto;
@@ -111,12 +111,12 @@
   </style>
 </head>
 <body>
-  <div class="card">
+  <main>
     <div class="back-cover">
       <img src="images/bg-pattern-card.svg" alt="" class="back-cover-img">
     </div>
       <div class="header">
-        <img src="images/image-victor.jpg" alt="" class="profile-picture">
+      <h1><img src="images/image-victor.jpg" alt="" class="profile-picture"></h1>
         <span class="name">Victor Crest</span>
         <span class="age">26</span>
         <span class="country"> London</span>
@@ -133,10 +133,10 @@
             <li>Photos</li>
           </ul>
       </div>
-  </div>
-  <div class="attribution">
+    </main>
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/marcelx-silva">Thiago Marcelo</a>.
-  </div>
+  </footer>
 </body>
 </html>
