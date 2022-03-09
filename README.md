@@ -39,6 +39,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Built with
 - HTML5
+- Semantic tags
 - CSS custom properties
 - Reset CSS
 - Flexbox
