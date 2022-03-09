@@ -22,15 +22,20 @@
      }
     
      body{
-       font-size:18px;
-       font-family: 'Kumbh Sans', sans-serif;
-       background-color: hsl(185, 75%, 39%);
-       background-image:
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+      font-size:18px;
+      font-family: 'Kumbh Sans', sans-serif;
+      background-color: hsl(185, 75%, 39%);
+      background-image:
         url(./images/bg-pattern-top.svg),
         url(./images/bg-pattern-bottom.svg);
       background-repeat:  no-repeat;
       background-position: -80% 110%, 160% -60% ;
-      
      }
     .card{
       width: 350px;
@@ -48,14 +53,12 @@
       
     }
     .profile-picture{
-      z-index: 1;
-      position: relative;
-      margin-top: -50px;
-      display: block;
-      margin-left: 33.1%;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      margin-bottom:5%;
+     z-index: 1;
+     display: block;
+     border-radius: 50%;
+     border: 5px solid rgb(255, 255, 255);
+     margin: -50px auto 5% auto;
+     position: relative;
     }
 
     .back-cover-img{
@@ -97,9 +100,7 @@
        width: 300px;
      }
      .body{
-      background-position: 50% top;
-      background-position: 5px 20px , 0;
-      background-size: 100vw auto;
+      background-position: center;
      }
      .header-info{
       font-size: 0.6em;
